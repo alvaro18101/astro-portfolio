@@ -1,0 +1,65 @@
+---
+import { GitHubIcon, LinkedInIcon, EmailIcon } from './icons/icons'
+import './styles/ContactMe.css'
+---
+
+<section id="contact-me">
+  <div class="contact-me-container">
+    <h2 class="subtitle">
+      Contáctame
+    </h2>
+    <!-- <p class="contact-me-text">Siempre estoy abierto a nuevas oportunidades y colaboraciones, Mándame un mensaje o contáctame por mis redes</p> -->
+    <div class="contact-me-list">
+      <div class="contact-me-card">
+        <h3 class="subsubtitle contact-me-subtitle">Mis redes sociales</h3>
+        <p class="contact-me-text">Siempre estoy abierto a nuevas oportunidades, colaboraciones o simplemente charlar sobre tecnología y ciencia de datos.</p>
+        <h4 class="contact-me-subsubtitle">Conecta conmigo</h4>
+        <div class="contact-me-newtworks">
+          <div class="contact-me-network" onclick="window.open('mailto:alvaro.siesquen@gmail.com', '_blank')">
+            <div class="network-icon"><EmailIcon height={17} fillColor="#111827"/></div>
+            Email
+          </div>
+          <div class="contact-me-network" onclick="window.open('https://www.linkedin.com/in/alvarosiesquen/', '_blank')">
+            <div class="network-icon"><LinkedInIcon height={17} fillColor="#111827"/></div>
+            LinkedIn
+          </div>
+          <div class="contact-me-network" onclick="window.open('https://github.com/alvaro18101/', '_blank')">
+            <div class="network-icon"><LinkedInIcon height={17} fillColor="#111827"/></div>
+            GitHub
+          </div>
+        </div>
+        <div class="contact-me-additional-info">
+          <div class="contact-me-additional-info-card">
+            <h4 class="contact-me-subsubtitle">Ubicación</h4>
+            <p>Lima, Perú</p>
+          </div>
+          <div class="contact-me-additional-info-card">
+            <h4 class="contact-me-subsubtitle">Disponibilidad</h4>
+            <p>Abierto a oportunidades de trabajo freelance y a tiempo parcial y completo</p>
+          </div>
+        </div>
+      </div>
+      <div class="contact-me-card">
+        <h3 class="subsubtitle contact-me-subtitle">Mándame un mensaje</h3>
+        <p class="contact-me-text">¿Quieres cotizar un proyecto o quieres que colaboremos? Completa el formulario a continuación y me pondré en contacto contigo lo antes posible.</p>
+        <form action="https://formsubmit.co/ae194e28931f1229fd8077c554631980" class="contact-me-form" method="post">
+          <div class="contact-me-form-input-field">
+            <label for="name">Nombres</label>
+            <input type="text" name="name" id="name">
+          </div>
+          <div class="contact-me-form-input-field">
+            <label for="email">Correo</label>
+            <input type="email" name="email" id="email">
+          </div>
+          <div class="contact-me-form-input-field">
+            <label for="message">Mensaje</label>
+            <textarea name="message" id="message" rows="3"></textarea>
+          </div>
+          <input type="submit" value="Enviar mensaje" class="form-button">
+          <input type="hidden" name="_next" value="https://alvarosiesquen.dev/">
+          <input type="hidden" name="_captcha" value="false">
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

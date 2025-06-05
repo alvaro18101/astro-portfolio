@@ -1,0 +1,20 @@
+---
+import { CodeIcon, StackIcon } from "./icons/icons";
+const {icon, title, skillsList} = Astro.props;
+import './styles/Skills.css'
+---
+
+<div class="skill-container">
+  <div class="skill-border">
+    <h3 class="subsubtitle skill-title">
+      {icon == 'web' && <div><CodeIcon height={20} fillColor="#000"/></div>}
+      {icon == 'stack' && <div><StackIcon height={20} fillColor="#000"/></div>}
+      {title}
+    </h3>
+    <ul class="skill-details">
+      {skillsList.map((skill: {skill: string}) => (
+        <li>{skill}</li>
+      ))}
+    </ul>
+  </div>
+</div>

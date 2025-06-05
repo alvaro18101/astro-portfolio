@@ -1,0 +1,39 @@
+---
+import SkillCard from "./SkillCard.astro"
+import './styles/Skills.css'
+---
+
+<section id="skills">
+  <div class="skills-container">
+    <h2 class="subtitle">
+      Habilidades
+    </h2>
+    <div class="skills-list">
+      <SkillCard
+        icon="web"
+        title="Lenguajes de Programación"
+        skillsList={['Python', 'Fortran', 'JavaScript']}
+      />
+      <SkillCard
+        icon="web"
+        title="Desarrollo Frontend"
+        skillsList={['HTML', 'CSS', 'JavaScript', 'React', 'Vue.js', 'Astro']}
+      />
+      <SkillCard
+        icon="stack"
+        title="Desarrollo Backend"
+        skillsList={['Django', 'MySQL', 'Manejo de APIs']}
+      />
+      <SkillCard
+        icon="stack"
+        title="Data Science"
+        skillsList={['Pandas', 'Web scraping', 'Scikit learn', 'Limpieza de datos', 'Procesamiento de datos', 'Visualización de datos', 'Machine learning', 'Entrenamiento de redes neuronales']}
+      />
+      <SkillCard
+        icon="web"
+        title="Software y Herramientas"
+        skillsList={['Git', 'Github', 'Visual Studio Code', 'Consola de Linux', 'Notion', 'Excel', 'LaTeX', 'OriginPro', 'Gnuplot','Figma']}
+      />
+    </div>
+  </div>
+</section>

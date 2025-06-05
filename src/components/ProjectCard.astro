@@ -1,0 +1,34 @@
+---
+import { CodeIcon, StackIcon } from "./icons/icons";
+const {icon, name, description, image_url, skillsList, url} = Astro.props;
+import './styles/Proyects.css'
+
+const icon_name = icon == "web" ? 'Web' : 'Data'
+---
+
+<div class="project-container">
+  <span class="project-icon">
+    {icon == 'web' && <div class="icon"><CodeIcon height={15} fillColor="#FFF"/></div>}
+    {icon == 'data' && <div class="icon"><StackIcon height={15} fillColor="#FFF"/></div>}
+    <div class="icon-title">{icon_name}</div>
+  </span>
+  <div class="project-img">
+    <img src={image_url} alt="" draggable="false">
+  </div>
+  <div class="project-details">
+    <h3 class="subsubtitle">
+      {name}
+    </h3>
+    <p class="project-text">
+      {description}
+    </p>
+    <ul class="project-skills">
+      {skillsList.map((skill: {skill: string}) => (
+        <li>{skill}</li>
+      ))}
+    </ul>
+    {url && <div class="view-project">
+      <a href={url} target="_blank">Ver proyecto</a>
+    </div>}
+  </div>
+</div>

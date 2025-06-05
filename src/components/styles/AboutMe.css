@@ -1,0 +1,29 @@
+/* ABOUT ME */
+
+.about-me-container {
+  padding: 8rem 0;
+}
+
+.about-me-text {
+  text-align: center;
+  width: 50%;
+  margin: auto;
+  font-size: 1.2rem;
+}
+
+.networks-icons-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.networks-icons-container .network-icon {
+  cursor: pointer;
+}
+
+.networks-icons-container .network-icon:hover {
+  opacity: 0.7;
+  transition: 0.3s;
+}

@@ -1,0 +1,111 @@
+---
+import ProjectCard from "./ProjectCard.astro"
+import './styles/Proyects.css'
+---
+
+<section id="projects">
+  <div class="projects-container">
+    <h2 class="subtitle">
+      Proyectos
+    </h2>
+    <div class="projects-list">
+      <ProjectCard 
+        icon = "web"
+        name = "Tienda online para Global Market Importaciones"
+        description = "Desarrollo de un e-commerce, sin pasarela de pagos. Ideal para mostrar productos de un minimarket o emprendimiento"
+        image_url = "/project-images/global-market.png"
+        skillsList = {['Astro', 'Tailwind', 'Netlify']}
+        url = 'https://globalmarketperu.com/'
+      />
+      <ProjectCard 
+        icon = "web"
+        name = "Web responsive para Mentory en WordPress"
+        description = "Diseño (en equipo) de página web en WordPress con PHP"
+        image_url = "/project-images/web-mentory.png"
+        skillsList = {['HTML', 'CSS', 'PHP', 'WordPress']}
+        url = 'https://mentory.pe/'
+      />
+      <ProjectCard 
+        icon = "web"
+        name = "Lista de Tareas"
+        description = "Aplicación web minimalista con Vue y desplegada en Netlify que administra tus tareas"
+        image_url = "/project-images/to-do-list.png"
+        skillsList = {['Vue', 'Netlify']}
+        url = 'https://to-do-list-alvaro-siesquen.netlify.app/'
+      />
+      <ProjectCard 
+        icon = "data"
+        name = "Red neuronal para predicción de delivery"
+        description = "Limpieza de datos y entrenamiento de red neuronal en scikit learn para predecir el tiempo de llegada de un delivery"
+        image_url = "/project-images/delivery-deep-learning.png"
+        skillsList = {['Python', 'Scikit Learn', 'Matplotlib']}
+        url = ''
+      />
+      <ProjectCard 
+        icon = "data"
+        name = "Web Scraping de tiendas de licores"
+        description = "Uso de Python, Beautiful Soup y Selenium para realizar web scraping de tiendas online de licores"
+        image_url = "/project-images/web-scraping-licorerias.png"
+        skillsList = {['Python', 'Web Scraping', 'Beautiful Soup', 'Selenium']}
+        url = 'https://github.com/alvaro18101/web-scraping-licorerias'
+      />
+      <ProjectCard 
+        icon = "data"
+        name = "Análisis de chat de WhatsApp con Python"
+        description = "Procesamiento y análisis de mensajes de WhatsApp en Python empleando RegEx y Pandas"
+        image_url = "/project-images/whatsapp-analysis.png"
+        skillsList = {['Python', 'Matplotlib', 'Pandas', 'RegEx']}
+        url = 'https://github.com/alvaro18101/whatsapp-chat-analysis'
+      />
+      <ProjectCard 
+        icon = "data"
+        name = "Comparador de precios de tiendas online"
+        description = "Aplicación web de Django que realiza web scraping a tiendas online según la búsqueda realizada de algún producto"
+        image_url = "/project-images/comparador.png"
+        skillsList = {['Python', 'Django', 'Web Scraping', 'Beautiful Soup']}
+        url = ''
+      />
+
+      <ProjectCard 
+        icon = "data"
+        name = "Análisis y predicción de datos usando deep learning"
+        description = "Limpieza y análisis de datos sobre precios vehiculares usando Pandas y entrenamiento de una red neuronal para lograr predecir estos precios"
+        image_url = "/project-images/precios-vehiculares-deep-learning.png"
+        skillsList = {['Python', 'Matplotlib', 'Pandas', 'Scikit Learn']}
+        url = ''
+      />
+      <ProjectCard 
+        icon = "data"
+        name = "Simulaciones de fenómenos físicos"
+        description = "Simulaciones de fenómenos físicos empleando física computacional y métodos numéricos"
+        image_url = "/project-images/physics-simulation.png"
+        skillsList = {['Python', 'Física Computacional']}
+        url = 'https://github.com/alvaro18101/Physics-projects'
+      />
+      <ProjectCard 
+        icon = "data"
+        name = "Proyecto para Hackathon 2022 de PECC"
+        description = "Simulación por consola del juego de Battleship implementando la librería de Qiskit, de computación cuántica"
+        image_url = "/project-images/hackathon-PECC.png"
+        skillsList = {['Python', 'Qiskit', 'Mecánica Cuántica']}
+        url = 'https://github.com/alvaro18101/PECC_Hackathon_2022_QuantumTarget'
+      />
+      <ProjectCard 
+        icon = "data"
+        name = "Repositorio de Métodos Numéricos"
+        description = "Repositorio con diferentes métodos numéricos aprendidos en clases"
+        image_url = "/project-images/metodos-numericos.png"
+        skillsList = {['Python', 'Fortran']}
+        url = 'https://github.com/alvaro18101/Metodos-Numericos'
+      />
+      <ProjectCard 
+        icon = "data"
+        name = "Red neuronal para clasificar imágenes"
+        description = "Proyecto final de la escuela de verano de Deep Learning impartida por AEPIF"
+        image_url = "/project-images/clasificacion-imagenes.png"
+        skillsList = {['Python', 'Redes Neuronales', 'PyTorch']}
+        url = 'https://www.overleaf.com/read/nhkmpxfhvfrj#d6dc3b'
+      />
+    </div>
+  </div>
+</section>

@@ -1,0 +1,39 @@
+/* GLOBAL VARIABLES */
+:root {
+  --text-color: #4B5563;
+  --background-color: #F9FAFB;
+}
+
+/* GLOBAL STYLES */
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  font-family: Inter;
+  color: #111827;
+  background-color: #FFFFFF;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.subsubtitle {
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  color: #111827;
+}
+
+p {
+  color: var(--text-color);
+}

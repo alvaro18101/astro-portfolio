@@ -1,0 +1,23 @@
+---
+import { FileDownloadIcon } from "./icons/icons"
+import './styles/Hero.css'
+---
+
+<section id="hero">
+  <div class="hero-container">
+    <h1>Alvaro <span>Siesquén</span></h1>
+    <p class="hero-description">
+    Desarrollador web y analista de datos
+    </p>
+    <div class="hero-buttons-container">
+      <button onclick="location.href='#contact-me'" class="hero-button-1">
+          Contáctame
+      </button>
+      <button onclick="window.open('./assets/resume.pdf')" class="hero-button-2">
+          <!-- <img src="/icons/file-down.png" alt=""> -->
+          <FileDownloadIcon height={20} fillColor="#000000" />
+          Descargar CV
+      </button>
+    </div>
+  </div>
+</section>

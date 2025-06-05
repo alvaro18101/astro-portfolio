@@ -1,0 +1,42 @@
+---
+import { GitHubIcon, LinkedInIcon } from "./icons/icons"
+import './styles/AboutMe.css'
+---
+
+<section id="about-me">
+  <div class="about-me-container">
+    <h2 class="subtitle">
+      Acerca de mí
+    </h2>
+    <p class="about-me-text">
+      Tengo conocimientos en desarrollo frontend, manejando Astro y Vue.js, en desarrollo backend con Django y manejo de bases de datos con MySQL.<br>
+      También tengo un extenso conocimiento en Python, web scraping, limpieza de datos, machine learning y deep learning.
+    </p>
+    <div class="networks-icons-container">
+      <!-- <img 
+        src="./icons/github.png" 
+        alt="GitHub"
+        onclick="window.open('https://github.com/alvaro18101/', '_blank')"
+        draggable="false"
+      >
+      <img 
+        src="./icons/linkedin.png" 
+        alt="LinkedIn" 
+        onclick="window.open('https://www.linkedin.com/in/alvarosiesquen/', '_blank')"
+        draggable="false"
+      > -->
+      <div 
+        class="network-icon"
+        onclick="window.open('https://github.com/alvaro18101/', '_blank')"
+      >
+        <GitHubIcon height={40} fillColor="#4B5563" />
+      </div>
+      <div 
+      class="network-icon"
+      onclick="window.open('https://www.linkedin.com/in/alvarosiesquen/', '_blank')"
+      >
+        <LinkedInIcon height={40} fillColor="#4B5563" />
+      </div>
+    </div>
+  </div>
+</section>
