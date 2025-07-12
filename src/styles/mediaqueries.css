@@ -84,10 +84,6 @@
     opacity: 1;
   }
 
-  .networks-icons-container .network-icon:hover {
-    opacity: 1;
-  }
-
   .project-container:hover {
     box-shadow: 0 1px 3px 0 #7A7D8293;
   }
@@ -96,7 +92,7 @@
     background-color: #ecedef;
   }
 
-    .view-project a:hover {
+  .view-project a:hover {
     color: #2d3136;
   }
 
