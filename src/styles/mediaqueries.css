@@ -99,12 +99,4 @@
     .view-project a:hover {
     color: #2d3136;
   }
-
-  .contact-me-network:hover {
-    background-color: transparent;
-  }
-
-  .form-button:hover {
-    opacity: 1;
-  }
 }

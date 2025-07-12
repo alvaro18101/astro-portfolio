@@ -150,3 +150,13 @@
     width: 100%;
   }
 }
+
+@media (hover: none) {
+  .contact-me-network:hover {
+    background-color: transparent;
+  }
+
+  .form-button:hover {
+    opacity: 1;
+  }
+}
