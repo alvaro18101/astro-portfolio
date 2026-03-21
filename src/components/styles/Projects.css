@@ -8,15 +8,14 @@
 .projects-list {
   width: 90%;
   margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
   box-sizing: border-box;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr; /* grid-cols-1 */
+  gap: 1rem; /* gap-4 (16px aprox) */
 }
 
 .project-container {
-  width: calc(33% - 1rem);
+  width: 100%;
   border: 1px solid #000;
   border-radius: 10px;
   box-shadow: 0 1px 3px 0 #7A7D8293;

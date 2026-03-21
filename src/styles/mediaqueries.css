@@ -33,12 +33,6 @@
     padding: 4rem 0;
   }
 
-  .projects-list {
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-  }
-
   .project-container {
     width: 100%;
     padding: 1rem;
@@ -98,5 +92,19 @@
 
     .view-project a:hover {
     color: #2d3136;
+  }
+}
+
+/* md:grid-cols-2 */
+@media (min-width: 768px) {
+  .projects-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* lg:grid-cols-4 */
+@media (min-width: 1024px) {
+  .projects-list {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
